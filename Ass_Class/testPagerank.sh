@@ -61,6 +61,11 @@ do
 		exit 1
 	fi
 
+	if [[ -f ${work_path}/results/${test_dir}/pagerankList.txt ]]
+	then
+    rm -rf ${work_path}/results/${test_dir}/pagerankList.txt
+	fi
+
 	if [[ -f ${work_path}/results/${test_dir}/test.sh ]]
 	then
 		./test.sh

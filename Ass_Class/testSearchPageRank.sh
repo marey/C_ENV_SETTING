@@ -56,6 +56,11 @@ do
 		exit 1
 	fi
 
+	if [[ -f ${work_path}/results/${test_dir}/searchPagerank.txt ]]
+	then
+    rm -rf ${work_path}/results/${test_dir}/searchPagerank.txt
+	fi
+
 	if [[ -f ${work_path}/results/${test_dir}/testSearchPageRank.sh ]]
 	then
 		./testSearchPageRank.sh

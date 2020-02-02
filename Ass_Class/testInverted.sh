@@ -58,6 +58,11 @@ do
 		exit 1
 	fi
 
+	if [[ -f ${work_path}/results/${test_dir}/invertedIndex.txt ]]
+	then
+    rm -rf ${work_path}/results/${test_dir}/invertedIndex.txt
+	fi
+
 	if [[ -f ${work_path}/results/${test_dir}/test.sh ]]
 	then
 		./test.sh
@@ -74,11 +79,11 @@ do
 	else
 		echo "** Failed Test ${test_dir}"
 		echo "> Your output (in results/${test_dir}/${OUTPUT_FILE}: "
-		# cat  ${work_path}/results/${test_dir}/${OUTPUT_FILE}
+		cat  ${work_path}/results/${test_dir}/${OUTPUT_FILE}
 		echo " "
 		echo " "
 		echo "> #### Expected output (in tests/${test_dir}/${OUTPUT_FILE}: "
-		# cat  ${work_path}/tests/${test_dir}/${OUTPUT_FILE}
+		cat  ${work_path}/tests/${test_dir}/${OUTPUT_FILE}
 		echo "> Compare files results/${test_dir}/${OUTPUT_FILE} and tests/${test_dir}/${OUTPUT_FILE} to see differences"
 	fi
 	echo "------------------------------ "
