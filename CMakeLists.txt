@@ -6,4 +6,5 @@ set(CMAKE_C_STANDARD 11)
 # include_directories(Tutorial_Class/Week04)
 
 add_executable(COMP9024_20T0_PUBLIC
-        Codes/main.c)
+        Codes/MyTaskScheduler.c)
+
