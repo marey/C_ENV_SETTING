@@ -17,17 +17,33 @@
 // 1.标准输入，输入出
 // <    >
 int main(int argc, char *argv[]) {
-    for (int i = 0; i < argc; i++) {
-        printf("argument index is %d, arguemnt is %s\n", i, argv[i]);
+
+    char word[1024];
+    // 如果stdin里面的内容长度大于 1024，最长读取1024
+    // 小于1024
+    // /Users/ruimu/CLionProjects/COMP9024_20T2/Codes/a.txt
+    FILE *file = fopen("a.txt","r");
+    char split_chars[5] = " ,\n\r";
+    char *token;
+
+    if (file!=NULL) {
+        // 打开并读取文件
+        while (fgets(word, 1024, file) != NULL) {
+            // delete \n
+            word[strlen(word) - 1] = '\0';
+            // 此处代码段，需要记下来
+            token = strtok(word, split_chars);
+            while( token!=NULL) {
+                printf("token is %s \n", token);
+                // 特别要注意，此处是NULL
+                token = strtok(NULL, split_chars);
+            }
+
+        }
+        fclose(file);
     }
 
-    char word;
-    // end of file
-    while ((word = getchar()) != EOF) {
-        if (isalpha(word)) {
-            printf("%c", word);
-        } else {
-            printf("\n");
-        }
-    }
+
+
+
 }
