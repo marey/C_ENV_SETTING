@@ -7,6 +7,12 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(COMP9024_20T2
         # Codes/test.c
-        Codes/class.c
+        # Codes/class.c
+        # Codes/lab01/binary.c
+        # Codes/arrat_queue.h
+        # Codes/arrat_queue.c
+        Codes/array_stack.c
+        Codes/arrat_stack.h
+        Codes/class10.c
         )
 
