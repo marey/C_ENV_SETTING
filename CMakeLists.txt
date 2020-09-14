@@ -11,8 +11,6 @@ add_executable(COMP9024_20T2
         # Codes/lab01/binary.c
         # Codes/arrat_queue.h
         # Codes/arrat_queue.c
-        Codes/array_stack.c
-        Codes/arrat_stack.h
-        Codes/class10.c
+        Codes/main.c
         )
 
