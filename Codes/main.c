@@ -3,7 +3,7 @@
 // C Program: Hello world
 
 // 2521，9024 学完，debug能力，还有编程思维
-
+// OK fine
 #include <stdio.h>
 
 int main(int argc, char *args[]) {
