@@ -7,9 +7,9 @@
 int main() {
     LinkedList linkedList = createLinkedList();
     insertLinkedList(linkedList,1);
-    insertLinkedList(linkedList,1);
+    insertLinkedList(linkedList,2);
 
-
+    printLinkedList(linkedList);
 
     freeLinkedList(linkedList);
 }

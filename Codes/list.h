@@ -7,6 +7,8 @@ typedef struct list* LinkedList;
 
 LinkedList createLinkedList();
 
+void printLinkedList(LinkedList linkedList);
+
 void insertLinkedList(LinkedList linkedList, int data);
 
 void freeLinkedList(LinkedList linkedList);
