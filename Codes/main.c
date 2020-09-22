@@ -13,7 +13,7 @@ int main(int argc, char *args[]) {
         if (scanf("%d", &number) == 1) {
             printf("your input is %d\n", number);
         }
-        if (number > 100) {
+        if (number == 100) {
             break;
         }
     }
