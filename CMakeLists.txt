@@ -9,12 +9,12 @@ set(CMAKE_C_STANDARD 11)
 # file01.c  method main
 # file02.c  method main
 add_executable(COMP9024_20T2
-        #Codes/Stack.c
-        #Codes/Stack.h
-        #Codes/stack_main.c
-        # Codes/main.c
-        # Codes/house_main.c
-        Codes/list_main.c
+        Codes/main.c
+        )
+
+add_executable(COMP9024_20T2_LIST_MAIN
+        Codes/list.h
         Codes/list.c
+        Codes/list_main.c
         )
 
