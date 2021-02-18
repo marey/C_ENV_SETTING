@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(COMP9024_20T2 C)
+project(COMP9024_21T1 C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -8,13 +8,7 @@ set(CMAKE_C_STANDARD 11)
 # 1.1个工程文件只能有一个main方法入口
 # file01.c  method main
 # file02.c  method main
-add_executable(COMP9024_20T2
+add_executable(COMP9024_21T1
         Codes/main.c
-        )
-
-add_executable(COMP9024_20T2_LIST_MAIN
-        Codes/list.h
-        Codes/list.c
-        Codes/list_main.c
         )
 
