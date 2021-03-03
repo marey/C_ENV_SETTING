@@ -10,3 +10,9 @@ add_executable(C_ENV_SETTING
         Codes/main.c
         )
 
+add_executable(LinkedList
+        Codes/main.c
+        Codes/list.c
+        Codes/list.h
+        )
+
