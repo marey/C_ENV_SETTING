@@ -3,20 +3,11 @@ project(C_ENV_SETTING C)
 
 set(CMAKE_C_STANDARD 11)
 
-
-
-add_executable(C_ENV_SETTING
-        Codes/main.c
+add_executable(int_main
+        Codes/int_main.c
         )
 
-
-add_executable(test.exe
+add_executable(eli.out
         Codes/main02.c
-        )
-
-add_executable(LinkedList
-        Codes/main.c
-        Codes/list.c
-        Codes/list.h
         )
 
