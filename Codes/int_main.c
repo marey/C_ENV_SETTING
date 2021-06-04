@@ -19,11 +19,12 @@ void test03() {
 void test04() {
     int *numbers = malloc(sizeof(int) * 10);
     numbers[0] = 10;
+    printf("address: %p, first is:%d\n",numbers, numbers[0]);
     free(numbers);
 
     numbers[0] = 10;
 
-    printf("first is:%d", numbers[0]);
+    printf("address: %p, first is:%d\n",numbers, numbers[0]);
 }
 
 // 这是我的第一个函数
